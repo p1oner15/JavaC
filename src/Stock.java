@@ -1,6 +1,6 @@
 public class Stock {
 
-    public Stock(String s, int i, double v) {
+    public Stock(String name, int count, double cost) {
     }
 
     public void acquire(String a, int b, double c) {
@@ -26,10 +26,10 @@ public class Stock {
         return 0;
     }
     private void show(Stock a) {
-        System.out.println(a);
+        System.out.println(a.toString());
     }
-    public double set_tot(int b, double c) {
-        return (double) (b * c);
+    public double set_tot(int count, double cost) {
+        return (double) (count * cost);
     }
 
     public static void main(String[] args) {
