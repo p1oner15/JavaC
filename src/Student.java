@@ -1,25 +1,32 @@
 public class Student {
 
-    private static final String name = "Alex";
-    private static final int course = 3;
+    private String name;
+    private int course;
 
     public Student(String name, int course) {
-        name = "Alex";
-        course = 3;
+        this.name = name;
+        this.course = course;
 
     }
 
     @Override
     public String toString() {
-        return "Класс Student" + name + course;
-
+        return "Class : Student" + " Name - "  + name + ", course - "  + course;
     }
 
-    public static String getName() {
-        return name;
+    public String getName() {
+        return this.name;
     }
 
-    public static int getCourse() {
-        return course;
+    public int getCourse() {
+        return this.course;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
     }
 }
